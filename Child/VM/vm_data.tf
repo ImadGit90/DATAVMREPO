@@ -10,8 +10,8 @@ data "azurerm_public_ip" "Publicip" {
 }
 
 data "azurerm_key_vault" "keyvault" {
-  name                = "keykavault2234"
-  resource_group_name = "ketkavault2"
+  name                = "KeyvaultTST1"
+  resource_group_name = "keyvault_rg"
 }
 
 
