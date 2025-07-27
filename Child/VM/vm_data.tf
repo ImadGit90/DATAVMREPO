@@ -15,12 +15,12 @@ data "azurerm_key_vault" "keyvault" {
 }
 
 
-data "azurerm_key_vault_secret" "keyvalt-username" {
+data "azurerm_key_vault_secret" "keyvault" {
   name =  "username"
   key_vault_id = data.azurerm_key_vault.keyvault.id
 }
 
-data "azurerm_key_vault_secret" "kv-password" {
+data "azurerm_key_vault_secret" "keyvault" {
   name =  "password"
   key_vault_id = data.azurerm_key_vault.keyvault.id
 }
